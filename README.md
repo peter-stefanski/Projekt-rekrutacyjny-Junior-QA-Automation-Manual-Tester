@@ -95,12 +95,12 @@ Potwierdzenie, że film "The Pickup" jest poprawnie powiązany z kategorią za p
 
 ## Zapytanie SQL
 
-SELECT
-m.movie_id,
-m.title AS movie_title,
-c.category_id,
-c.name AS category_name
-FROM movies m
-INNER JOIN movie_categories mc ON m.movie_id = mc.movie_id
-INNER JOIN categories c ON mc.category_id = c.category_id
-WHERE m.title = 'The Pickup';
+- SELECT
+- m.movie_id,
+- m.title AS movie_title,
+- c.category_id,
+- c.name AS category_name
+- FROM movies m
+- INNER JOIN movie_categories mc ON m.movie_id = mc.movie_id
+- INNER JOIN categories c ON mc.category_id = c.category_id
+- WHERE m.title = 'The Pickup';

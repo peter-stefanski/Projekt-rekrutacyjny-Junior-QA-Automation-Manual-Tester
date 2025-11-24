@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  playwright-tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vodfilm-qa-tests
+    working_dir: /app/vodfilm-qa
+    volumes:
+      - ./test-results:/app/vodfilm-qa/test-results
+      - ./screenshots:/app/vodfilm-qa/screenshots
+      - ./allure-results:/app/vodfilm-qa/allure-results
+    environment:
+      - HEADLESS=true
+      - BASE_URL=https://vod.film/
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge

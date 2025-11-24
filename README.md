@@ -30,8 +30,8 @@ Projekt wykorzystuje architekturę **Page Object Model (POM)**, dzięki czemu lo
 
 ### 1. Sklonuj repozytorium
 
-git clone https://github.com/UZUPEŁNIJ/UZUPEŁNIJ.git
-cd UZUPEŁNIC
+- git clone https://github.com/peter-stefanski/Projekt-rekrutacyjny-Junior-QA-Automation-Manual-Tester.git
+- cd vodfilm-qa
 
 ### 2.Utwórz i aktywuj środowisko wirtualne
 
